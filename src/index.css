@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Restaurant theme - warm, appetizing, modern */
+    --background: 40 50% 99%;
+    --foreground: 152 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 152 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 152 40% 15%;
+
+    /* Deep forest green primary */
+    --primary: 152 73% 19%;
+    --primary-foreground: 40 50% 99%;
+
+    /* Warm terracotta accent */
+    --secondary: 13 63% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 40 30% 95%;
+    --muted-foreground: 152 20% 45%;
+
+    --accent: 13 63% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 25% 88%;
+    --input: 40 25% 88%;
+    --ring: 152 73% 19%;
+
+    --radius: 0.75rem;
+
+    /* Success state for features */
+    --success: 152 73% 35%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning for allergens */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(152 73% 19%) 0%, hsl(152 60% 30%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100% / 0) 0%, hsl(152 73% 19% / 0.05) 100%);
+    
+    /* Shadows */
+    --shadow-subtle: 0 2px 8px hsl(152 73% 19% / 0.08);
+    --shadow-card: 0 4px 16px hsl(152 73% 19% / 0.12);
+    --shadow-elevated: 0 8px 32px hsl(152 73% 19% / 0.16);
+  }
+
+  .dark {
+    --background: 152 40% 6%;
+    --foreground: 40 50% 95%;
+
+    --card: 152 35% 10%;
+    --card-foreground: 40 50% 95%;
+
+    --popover: 152 35% 10%;
+    --popover-foreground: 40 50% 95%;
+
+    --primary: 152 60% 40%;
+    --primary-foreground: 152 40% 6%;
+
+    --secondary: 13 70% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 152 30% 15%;
+    --muted-foreground: 40 20% 65%;
+
+    --accent: 13 70% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 152 30% 18%;
+    --input: 152 30% 18%;
+    --ring: 152 60% 40%;
+
+    --success: 152 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(152 60% 25%) 0%, hsl(152 50% 35%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 0% / 0) 0%, hsl(152 60% 40% / 0.1) 100%);
+    
+    --shadow-subtle: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 4px 16px hsl(0 0% 0% / 0.4);
+    --shadow-elevated: 0 8px 32px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift {
+    @apply transition-smooth hover:-translate-y-1 hover:shadow-elevated;
+  }
+}
