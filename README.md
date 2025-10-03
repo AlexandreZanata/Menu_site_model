@@ -1,4 +1,53 @@
-# Site Restaurante
+# Restaurant Site
+
+Sample restaurant website built with React, Vite, TypeScript and Tailwind CSS.
+
+## About
+
+This repository contains a restaurant website example built using React (Vite + TypeScript) and Tailwind CSS. It includes pages such as Home, Menu, Reservations, Gallery, and simple contexts for language and menu state.
+
+## Technologies
+
+- React + TypeScript
+- Vite
+- Tailwind CSS
+
+## Run locally
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the dev server:
+
+```bash
+npm run dev
+```
+
+3. Open http://localhost:5173 in your browser (or the port shown by Vite).
+
+## Notes
+
+- The project contains example images in `src/assets` and React components in `src/components`.
+- To publish to GitHub, add a remote and push. Example commands:
+
+```bash
+git remote add origin https://github.com/AlexandreZanata/Menu_site_model.git
+git branch -M main
+git push -u origin main
+```
+
+If you hit authentication issues, configure your credentials (use a personal access token for HTTPS) or use SSH.
+
+## License
+
+MIT
+
+---
+
+# Site Restaurante (Português)
 
 Projeto de exemplo: site de restaurante (React + Vite + TypeScript + Tailwind)
 
