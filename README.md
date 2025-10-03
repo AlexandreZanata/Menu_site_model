@@ -1,5 +1,7 @@
 # Restaurant Site
 
+[Visit the restaurant website](https://site-restaurante-phi.vercel.app/)
+
 Sample restaurant website built with React, Vite, TypeScript and Tailwind CSS.
 
 ## About
@@ -48,6 +50,8 @@ MIT
 ---
 
 # Site Restaurante (Português)
+
+[Visite o site do restaurante](https://site-restaurante-phi.vercel.app/)
 
 Projeto de exemplo: site de restaurante (React + Vite + TypeScript + Tailwind)
 
